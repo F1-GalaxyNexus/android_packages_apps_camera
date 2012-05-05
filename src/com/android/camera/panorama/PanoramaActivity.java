@@ -276,7 +276,6 @@ public class PanoramaActivity extends ActivityBase implements
 
         mPreferences = new ComboPreferences(this);
         CameraSettings.upgradeGlobalPreferences(mPreferences.getGlobal());
-        powerShutter(mPreferences);
         mPreferences.setLocalId(this, CameraHolder.instance().getBackCameraId());
         CameraSettings.upgradeLocalPreferences(mPreferences.getLocal());
         mStorage = CameraSettings.readStorage(mPreferences);
